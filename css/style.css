@@ -72,3 +72,47 @@ a {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
+.nav2 {
+	border-bottom: 1px solid grey;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	background-color: #ACAC92;
+}
+
+
+.menu2 {
+	margin: 0 30px 0 0;
+	width: 100%;
+}
+
+.menu2 a {
+	text-decoration: none;
+	color: white;
+	margin: 0 20px;
+	line-height: 70px;
+	text-align: center;
+	width: 100%;
+	display: inline;
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
+}
+
+.menu2 a:hover {
+	color: red;
+}
+
+@media only screen and (min-width : 900px) {
+
+	.navBar1 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 899px) {
+
+	.nav2 {
+		display: none;
+	}
+}
