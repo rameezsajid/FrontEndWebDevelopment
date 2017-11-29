@@ -1,3 +1,74 @@
-body{
-	background-color:red;
+* {
+	margin:0;
 }
+
+
+html, body {
+	height: 100%;
+}
+
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+  height: 100%;
+  background-color: #C5C4C3;
+}
+
+a {
+    text-decoration: none;    
+}
+
+
+
+
+.navBar1 {
+	padding-left: 10px;
+	padding-top: 10px;
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
+}
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    padding: 12px;
+    cursor: pointer;
+	background: url('../img/nav-icon.png') no-repeat;
+	margin-left:10px;
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
