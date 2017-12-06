@@ -166,12 +166,9 @@ p {
 #main {
 	min-height: 450px;
 	color: #fff;
-	padding: 0 50px 0 50px;
 }
 
-#main p {
-	padding: 0 50px 0 50px;
-}
+
 
 .mainContent {
 	text-align: center;
@@ -186,3 +183,19 @@ p {
 #showcase .content-wrap {
 	padding: 0 1.5em
 }
+
+#showcase .content-wrap, 
+#showcase .content-wrap {
+	padding: 0 1.5em;
+}
+
+#section-a {
+	background: #eaeaea;
+	color: #333;
+	padding-bottom: 2em;
+}
+
+#section-a p {
+	padding: 0 50px 50px 50px;
+}
+
