@@ -154,11 +154,21 @@ p {
 }
 
 #showcase {
-	min-height: 450px;
+	min-height: 650px;
 	color: #fff;
 	text-align: center;
 }
 
 #showcase .bg-image {
 	position: absolute;
+}
+
+#main {
+	min-height: 450px;
+	color: #fff;
+	text-align: center;
+}
+
+.content-wrap {
+	
 }
