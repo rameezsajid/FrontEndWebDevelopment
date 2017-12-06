@@ -12,7 +12,11 @@ a {
 }
 
 
-
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 
 .navBar1 {
 	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
