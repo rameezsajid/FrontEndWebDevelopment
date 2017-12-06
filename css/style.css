@@ -13,8 +13,13 @@ html {
 }
 
 body {
-  height: 100%;
-  background-color: #C5C4C3;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #333;
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
 }
 
 a {
@@ -120,4 +125,40 @@ a {
 	.nav2 {
 		display: none;
 	}
+}
+
+
+h1, h2 {
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
+.btn {
+	display: inline-block;
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	padding: 1em 2em;
+	border: 1px solid #666;
+	margin: .5em 0;
+}
+
+.btn:hover {
+	background-color: #eaeaea;
+	color: #333;
+}
+
+#showcase {
+	min-height: 450px;
+	color: #fff;
+	text-align: center;
+}
+
+#showcase .bg-image {
+	position: absolute;
 }
