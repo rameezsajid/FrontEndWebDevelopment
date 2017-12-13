@@ -1,84 +1,172 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
+		<!-- meta tags for responsivness and browser compatiblity -->
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, intial-scale=1.0" />
-		<title>Rameez Sajid</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-
-<body class="body">
-
-
-
-	<div class="navBar1">
-		<div class="dropdown">
-			<div class="dropbtn" onclick="myFunction()"></div>
-			<div id="myDropdown" class="dropdown-content">
-				<a href="#">Home</a>
-				<a href="#">Services</a>
-				<a href="#">Business</a>
-				<a href="#">Contact</a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="nav2">
-			<div class="menu2">
-				<a href="#">Home</a>
-				<a href="#">Services</a>
-				<a href="#">Business</a>
-				<a href="#">Contact</a>
-			</div>
-		</div>
-		
-		<div class="mainContent">
-		<header id="showcase" class="grid">
-		<div class="bg-image"></div>
-		<div class="content-wrap">
-		<h1>Welcome To My Website</h1>	
-		<p>Designs and builds websites for corporate or individual clients. Works with colleagues and clients to understand website requirements and client needs. 
-		Writes, tests, and debugs code and applications. Maintains knowledge of programming languages and monitors website analytics.</p>
-		<a href="#section-b" class="btn">Read More</a>		
-		</div>
-		</header>
-		
-		<main id="main">
-			<section id="section-a" class="grid">
-				<div class="content-wrap">
-					<h2 class="content-title">Web Development</h2>
-							<p>The role is responsible for designing, coding and modifying websites, from layout to function and according to a client's specifications. 
-							Strive to create visually appealing sites that feature user-friendly design and clear navigation.
-							Designs and builds websites for corporate or individual clients. Works with colleagues and clients to understand website requirements and client needs. 
-							Writes, tests, and debugs code and applications. Maintains knowledge of programming languages and monitors website analytics.</p>
-				</div>
-			</section>
-			
-				<section id="section-b" class="grid">
-		
-			<ul>
-				<li>
-					<div class="card">
-						<img src="https://static.pexels.com/photos/33972/pexels-photo.jpg" alt="">
-							<div class="card-content">
-								<h3 class="card-title">Web Design</h3>
-									<p>The role is responsible for designing, coding and modifying websites, from layout to function and according to a client's specifications. 
-									Strive to create visually appealing sites that feature user-friendly design and clear navigation.
-									Designs and builds websites for corporate or individual clients. Works with colleagues and clients to understand website requirements and client needs. 
-									Writes, tests, and debugs code and applications. Maintains knowledge of programming languages and monitors website analytics.</p>
-								</div>
+			<meta name="viewport" content="width=device-width, intial-scale=1.0" />
+			<title>Learning Academy</title>
+			<!-- main css file for the styling -->
+			<link rel="stylesheet" type="text/css" href="css/main.css">
+			</head>
+			<body>
+				<!-- I have created two navbars, one for mobile which is the default and one for larger screen sizes -->
+				<div class="navbar1">
+					<div class="dropdown-menu">
+						<div class="dropdown-button" onclick="myFunction()"></div>
+						<div id="my-navbar" class="dropdown-content">
+							<a href="#home-section">HOME</a>
+							<a href="#section-a">ABOUT</a>
+							<a href="#section-b">COURSES</a>
+							<a href="#section-d">CONTACT</a>
+						</div>
 					</div>
-				</li>
-			</ul>
-		</section>
-		</main>
-		
+				</div>
+				<nav class="navbar2">
+					<ul class="navbar2">
+						<li>
+							<a href="#home-section">HOME</a>
+						</li>
+						<li>
+							<a href="#section-a">ABOUT</a>
+						</li>
+						<li>
+							<a href="#section-b">COURSES</a>
+						</li>
+						<li>
+							<a href="#section-d">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- back to top button used to send the user back to the top of the page -->
+				<div class="toTop">
+					<a id="top" href="#showcase">Back To Top</a>
+				</div>
+				<!-- main content starts here -->
+					<!-- slideshow content starts here -->
+					<section id ="home-section" class="slideShow">
+						<header id="showcase" class="grid">
+							<div class="content-wrap">
+								<h1>Learning Academy</h1>
+								<h2>Our last session sold out fast. Reserve your seat TODAY!</h2>
+								<a href="#section-a" class="btn">Read More</a>
+							</div>
+						</header>
+						<div class="layer1"></div>
+						<div class="layer2"></div>
+						<div class="layer3"></div>
+						<div class="layer4"></div>
+						<div class="layer5"></div>
+					</section>
+					<!-- section a starts here -->
+					<main id="main">
+						<section id="section-a" class="grid">
+							<div class="content-wrap">
+								<h2 class="content-title">What We Do</h2>
+								<div class="content-text">
+									<p>Due to overwhelming demand, we have created course packages for Contractors, Business owners and for people who are looking to up skill and get themselves into Business Analysis or Project Management.</p>
+									<p>We have leading experts on board with over 30 years combined insurance, finance, business analysis and compliance experience.
+									We are now holding seminars across the country to be able to cater for professionals across the UK. We will coach you and mentor you to become a Business Analyst or Project Manager, 
+									we will place you on projects to gain experience and give you one to one support to develop your skill set. We even offer post job support in order to ensure there is a smooth transition from beginner level to advanced.</p>
+									<h3>How the projects work?</h3>
+									<p>We have ongoing projects, where you are guaranteed a placement on the project as an intern in order to be able to apply the theory in practice.</p>
+									<a href="#section-c" class="btn">Why Train With Us?</a>
+								</div>
+							</div>
+						</section>
+						<!-- section b starts here -->
+						<section id="section-b" class="grid">
+							<div class="content-wrap">
+								<h2 class="content-title">Courses</h2>
+								<ul>
+									<li>
+										<div class="card">
+											<img src="img/background13.jpeg" alt="">
+												<div class="card-content">
+													<h3 class="card-title">GDPR Seminar</h3>
+													<p>This 2-Day Fast Track EU General Data Protection Regulation (GDPR) 
+													course has been designed to help you learn all the EU GDPR principles and fundamentals, in order to ensure you are fully compliant.</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="card">
+												<img src="img/background14.jpeg" alt="">
+													<div class="card-content">
+														<h3 class="card-title">Financial Crime - AML/KYC</h3>
+														<p>Anti-Money Laundering (AML) and Know Your Customer (KYC) professionals are in demand as organisations increase their focus on risk prevention.</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="card">
+													<img src="img/background11.jpeg" alt="">
+														<div class="card-content">
+															<h3 class="card-title">Business Analysis Training</h3>
+															<p>This BCS Foundation Certificate in Business Analysis course teaches trainees to be able to identify issues in systems, 
+															develop effective business strategies, and manage stakeholders.</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</section>
+									<!-- section c starts here -->
+									<section id="section-c" class="grid">
+										<div class="content-wrap">
+											<h2 class="content-title">Why Train With Us?</h2>
+											<p>
+											Our in-house training solutions allow you to choose any classroom course of your choice, delivered at a venue of your choice, and by any 
+											method of your choice - offering you the ultimate convenience and value for money. Our onsite courses save you money by training multiple employees 
+											at once, meaning that you can reduce the travel expenses associated with public courses.</p>
+											<p>Our in-house training can be tailored to your business’s requirements - ensuring premium quality, 
+											applicability, and value for money. Onsite training puts you in control of your employees and allows you to monitor what 
+											they are learning during their training.</p>
+											<p>Business-specific additions can be added to make your organisation more efficient, streamlined, and more profitable. 
+											We design and develop our courses, and can adapt to your needs. We are the market leaders of on-site 
+											and in-house training with over 10 years' market experience of delivering tailored and quality courses to our valued customers.</p>
+										</div>
+									</section>
+									<!-- section d ( contact page )starts here -->
+									<section id="section-d" class="grid">
+										<div class="box">
+											<h2 class="content-title">Contact Us</h2>
+											<div id="panel">
+												<div class="con-form">
+													<form action="contact.php" id="form" method="post" name="form">
+														<input name="client" placeholder="Your First Name" type="text" value="" title="Firstname">
+															<input name="client" placeholder="Your Last Name" type="text" value="" title="Lastname">
+																<input name="phone" placeholder="Your Phone Number" type="tel" value="" required>
+																	<input name="email" placeholder="Your Email" type="email" value="" required>
+																		<textarea name="comment" placeholder="Your Message Here..." id="comment"></textarea>
+																		<input class="o-btn" type="Submit" value="Submit">
+																		</form>
+																	</div>
+																</div>
+															</div>
+															<div class="box">
+																<h2 class="content-title">In-House Training</h2>
+																<p>Learning Academy is a National training provider delivering professional training courses in many locations across the country. 
+																We are driven to coach and mentor candidates, irrespective of their background, to become well respected Business Analysts.</p>
+																<p>We are exceedingly passionate about what we do and continuously strive to provide outstanding quality and value for our clients.
+																We coach you, we place you on projects, we guide you through your job application process and we mentor you on the job.
+																Learning Academy, is run by well respected industry experts with over 30 years of experience combined of 
+																training delivery with FTSE 500 companies.</p>
+															</div>
+														</section>
+													</main>
+													<!-- footer of the page is here -->
+													<footer id="main-footer" class="grid">
+														<div>Copyright &copy; 2017 Learning Academy</div>
+														<div>Powered By 
+															<a href="https://github.com/rameezsajid/CTEC3905_P15224656" target="_blank">Rameez Sajid</a>
+														</div>
+													</footer>
+				<!-- two scripts used, one is used for giving a scrolling effect when clicking on a link in the navbar -->
+				<!-- and the other is used for showing and hidding navbar1 -->
+				<script src="js/script.js"></script>
+				<script src="js/scroll.js"></script>
+			</body>
 
-		</div>
 
-
-<script src="js/script.js"></script>
-
-</body>
 </html>
