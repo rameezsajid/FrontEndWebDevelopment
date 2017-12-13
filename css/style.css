@@ -1,226 +1,659 @@
+* {
+  margin: 0;
+}
+
+/* giving the body default styles */
+
 body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	background: #333;
-	color: #fff;
-	font-size: 1.1em;
-	line-height: 1.5;
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
+  background: #333;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
 }
 
 a {
-    text-decoration: none;    
+  text-decoration: none;
 }
 
+/* giving headers and paragraphs and images styles */
 
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-.navBar1 {
-	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
-}
-
-
-
-
-
-/* Dropdown Button */
-.dropbtn {
-    padding: 12px;
-    cursor: pointer;
-	background: url('../img/nav-icon.png') no-repeat;
-	margin-left:10px;
-	margin-top: 10px;
-}
-
-
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: absolute;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	margin-left:10px;
-
-	}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-
-.nav2 {
-	border-bottom: 1px solid grey;
-	text-align: center;
-	height: 70px;
-	line-height: 70px;
-	background-color: #7F7F7F;
-}
-
-
-.menu2 {
-	margin: 0 30px 0 0;
-	width: 100%;
-}
-
-.menu2 a {
-	text-decoration: none;
-	color: white;
-	margin: 0 30px;
-	line-height: 70px;
-	text-align: center;
-	width: 100%;
-	display: inline;
-	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
-}
-
-.menu2 a:hover {
-	color: #D6D3D3;
-}
-
-
-
-@media only screen and (min-width : 600px) {
-
-	.navBar1 {
-		display: none;
-	}
-}
-
-/*phone width*/
-
-@media only screen and (max-width : 599px) {
-
-	.nav2 {
-		display: none;
-	}
-}
-
-
-
-
-h1, h2 {
-	margin: 0;
-	padding: 1em 0;
+h1, h2, h3 {
+  margin: 0;
+  padding: 1em 0;
 }
 
 p {
-	margin: 0;
-	padding: 1em 0;
+  margin: 0;
+  padding: 1em 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* styles for navbar2 starts here */
+
+nav {
+  height: 40px;
+  width: 100%;
+  font-size: 11pt;
+  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
+  font-weight: bold;
+  position: fixed;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: black;
+  z-index: 99;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 600px;
+  height: 40px;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+nav a {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  line-height: 40px;
+}
+
+nav li a {
+  border-right: 1px solid #576979;
+  box-sizing: border-box;
+}
+
+nav li:last-child a {
+  border-right: 0;
+}
+
+nav a:hover, nav a:active {
+  background-color: #D4D0D0;
+  color: black;
+}
+
+/* this the styling of the back to top button which will be placed bottom right corner of the page */
+
+.toTop {
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.5);
+  height: 40px;
+  font-size: 11pt;
+  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
+  font-weight: bold;
+  position: fixed;
+  border-radius: 5px;
+  z-index: 10;
+  text-align: center;
+  color: white;
+}
+
+.toTop a {
+  display: inline-block;
+  width: 120px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 40px;
+  box-sizing: border-box;
+}
+
+.toTop a:hover, .toTop a:active {
+  background-color: #D4D0D0;
+  color: black;
+}
+
+
+
+/* styling for navbar1 */
+
+.navbar1 {
+  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  height: 40px;
+  z-index: 10;
+}
+
+.dropdown-button {
+  padding: 12px;
+  cursor: pointer;
+  background: url('../img/nav-icon.png') no-repeat;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: inline-block;
+}
+
+/* This is the dropdown content styles it is hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-left: 10px;
+}
+
+/* this is the content inside the dropdown menu */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* this changes the color of links in the menu when hovered */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* this shows the dropdown menu */
+.show {
+  display: block;
+}
+
+
+/* slideshow styling and keyframes starts here */
+/* I used layers to create the slideshows and keyframes and opacity to help me have a smooth slideshow */
+
+@keyframes layer2Anim {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes layer3Anim {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes layer4Anim {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes layer5Anim {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* slide show class*/
+/* I have given it a height and a z index of 1 */
+
+.slideShow {
+  position: relative;
+  height: 600px;
+  z-index: 0;
+}
+
+/* styles for the layers */
+
+.layer1, .layer2, .layer3, .layer4, .layer5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* layers displaying images */
+
+.layer1 {
+  background-image: url("../img/background15.jpeg");
+}
+
+.layer2 {
+  background-image: url("../img/background13.jpeg");
+  animation: layer2Anim 45s infinite;
+}
+
+.layer3 {
+  background-image: url("../img/main.jpeg");
+  animation: layer3Anim 45s infinite;
+}
+
+.layer4 {
+  background-image: url("../img/background14.jpeg");
+  animation: layer4Anim 45s infinite;
+}
+
+.layer5 {
+  background-image: url("../img/background12.jpeg");
+  animation: layer5Anim 45s infinite;
+}
+
+/* content of the showcase is displayed, I have given it a z-index of 2 so it displays over the slideshow */
+
+#showcase {
+  position: relative;
+  min-height: 500px;
+  color: #fff;
+  text-align: center;
+  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
+  font-size: 1rem;
+  z-index: 2;
+  padding-top: 2em;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
 }
 
 .btn {
-	display: inline-block;
-	background: #333;
-	color: #fff;
-	text-decoration: none;
-	padding: 1em 2em;
-	border: 1px solid #666;
-	margin: .5em 0;
-	margin-top: 50px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: .5em 0;
+  margin-top: 50px;
+  font-weight: 600;
 }
 
 .btn:hover {
-	background-color: #eaeaea;
-	color: #333;
+  background-color: #eaeaea;
+  color: #333;
 }
 
-#showcase {
-	min-height: 450px;
-	color: #fff;
-	text-align: center;
-}
+/* styles for content wrap, main section, main content class, and section a, b, c, d */
 
-#showcase .bg-image {
-	position: absolute;
-	background: #333 url('https://static.pexels.com/photos/97077/pexels-photo-97077.jpeg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 450px;
-	z-index: -1;
-	opacity: 0.5;
-}
-
-#showcase p {
-	padding: 0 50px 0 50px;
+.content-wrap {
+  padding: 0 1.5em;
+  padding-top: 2em;
 }
 
 #main {
-	min-height: 450px;
-	color: #fff;
-}
-
-
-
-.mainContent {
-	text-align: center;
-}
-
-#showcase h1{
-	padding-top: 100px;
-	padding-bottom: 0;
-}
-
-
-#showcase .content-wrap {
-	padding: 0 1.5em
-}
-
-#showcase .content-wrap, 
-#showcase .content-wrap {
-	padding: 0 1.5em;
+  min-height: 75%;
+  color: #fff;
+  text-align: center;
 }
 
 #section-a {
-	background: #eaeaea;
-	color: #333;
-	padding-bottom: 2em;
-}
-
-#section-a p {
-	padding: 0 50px 50px 50px;
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
 }
 
 #section-b {
-	padding: 2em 1em 1em;
+  padding: 0 1em 1em;
+  text-align: center;
 }
 
 #section-b ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #section-b li {
-	margin-bottom: 1em;
-	background:#fff;
-	color: #333;
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
 }
 
 .card-content {
-	padding: 1.5em;
+  padding: 1.5em;
 }
 
+#section-c {
+  background: #eaeaea;
+  color: #333;
+  padding: 2em;
+}
 
+.box {
+  padding: 2em;
+  color: #fff;
+}
+
+#section-d .box:first-child {
+  background: #2690d4;
+}
+
+/* styling for footer */
+
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer a {
+  color: #2690d4;
+  text-decoration: none;
+}
+
+/* submit button styling in the contact form */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  height: 38px;
+  position: relative;
+  margin: 0 0 0 0;
+  margin-top: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 0px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 6px solid white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #2B3A42;
+  background: white;
+  outline: 0;
+}
+
+/* input field styling in the contact form */
+
+input[type="email"],
+input[type="number"],
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+  font-family: "sofia-pro", sans-serif;
+  height: 38px;
+  width: 100%;
+  padding: 6px 10px 6px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+/* contact form styling */
+
+.con-form {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* media querey to not display navbar2 when mobile screen */
+@media only screen and (max-width : 749px) {
+
+  .navbar2 {
+    display: none;
+  }
+}
+
+/* media querey to change layout of webpage when accessed from a device which has a screen size with a width of at least 750px*/
+/* this layout is for devices such as ipads, tablets, laptops, and computers */
+
+@media(min-width: 750px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .content-wrap, 
+	#section-b ul {
+    grid-column: 1/5;
+  }
+
+  .box, #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+
+  .content-wrap {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .navbar1 {
+    display: none;
+  }
+}
+
+/* media querey to change content wrap and adjust padding to the left and right when device screen size is between 749 and 1299 px */
+@media screen and (max-width: 1299px) and (min-width: 749px) {
+
+  .content-wrap {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+/* media querey for contact form to change width of form when screen size is at least 1300 px*/
+/* for devices such as large screen laptop and PCs */
+
+@media screen and (min-width: 1300px) {
+  .con-form {
+    width: 80%;
+  }
+}
