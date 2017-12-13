@@ -390,26 +390,26 @@ nav a:hover, nav a:active {
 /* layers displaying images */
 
 .layer1 {
-  background-image: url("../img/background15.jpeg");
+  background-image: url("../img/background3.jpeg");
 }
 
 .layer2 {
-  background-image: url("../img/background13.jpeg");
+  background-image: url("../img/background4.jpeg");
   animation: layer2Anim 45s infinite;
 }
 
 .layer3 {
-  background-image: url("../img/main.jpeg");
+  background-image: url("../img/background2.jpeg");
   animation: layer3Anim 45s infinite;
 }
 
 .layer4 {
-  background-image: url("../img/background14.jpeg");
+  background-image: url("../img/background6.jpeg");
   animation: layer4Anim 45s infinite;
 }
 
 .layer5 {
-  background-image: url("../img/background12.jpeg");
+  background-image: url("../img/background7.jpeg");
   animation: layer5Anim 45s infinite;
 }
 
