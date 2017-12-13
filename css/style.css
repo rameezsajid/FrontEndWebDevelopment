@@ -1,3 +1,5 @@
+/* the layout of the webpage is mobile first, I have added media queries for the layout to change when screen size is increased */
+
 * {
   margin: 0;
 }
@@ -595,7 +597,7 @@ textarea {
   text-align: center;
 }
 
-/* media querey to not display navbar2 when mobile screen */
+/* media query to not display navbar2 when mobile screen */
 @media only screen and (max-width : 749px) {
 
   .navbar2 {
@@ -603,7 +605,7 @@ textarea {
   }
 }
 
-/* media querey to change layout of webpage when accessed from a device which has a screen size with a width of at least 750px*/
+/* media query to change layout of webpage when accessed from a device which has a screen size with a width of at least 750px*/
 /* this layout is for devices such as ipads, tablets, laptops, and computers */
 
 @media(min-width: 750px) {
@@ -640,7 +642,7 @@ textarea {
   }
 }
 
-/* media querey to change content wrap and adjust padding to the left and right when device screen size is between 749 and 1299 px */
+/* media query to change content wrap and adjust padding to the left and right when device screen size is between 749 and 1299 px */
 @media screen and (max-width: 1299px) and (min-width: 749px) {
 
   .content-wrap {
@@ -649,7 +651,7 @@ textarea {
   }
 }
 
-/* media querey for contact form to change width of form when screen size is at least 1300 px*/
+/* media query for contact form to change width of form when screen size is at least 1300 px*/
 /* for devices such as large screen laptop and PCs */
 
 @media screen and (min-width: 1300px) {
