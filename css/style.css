@@ -387,11 +387,11 @@ nav a:hover, .navbar2 a:active {
 /* layers displaying images */
 
 .layer1 {
-  background-image: url("../img/background3.jpeg");
+  background-image: url("../img/background4.jpeg");
 }
 
 .layer2 {
-  background-image: url("../img/background4.jpeg");
+  background-image: url("../img/background9.jpeg");
   animation: layer2Anim 45s infinite;
 }
 
@@ -401,12 +401,12 @@ nav a:hover, .navbar2 a:active {
 }
 
 .layer4 {
-  background-image: url("../img/background6.jpeg");
+  background-image: url("../img/background11.jpeg");
   animation: layer4Anim 45s infinite;
 }
 
 .layer5 {
-  background-image: url("../img/background7.jpeg");
+  background-image: url("../img/background8.jpeg");
   animation: layer5Anim 45s infinite;
 }
 
@@ -415,7 +415,7 @@ nav a:hover, .navbar2 a:active {
 #showcase {
   position: relative;
   min-height: 500px;
-  color: #fff;
+  color: #eaeaea;
   text-align: center;
   font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
   font-size: 1rem;
