@@ -1,4 +1,4 @@
-// I have a wrote a script to help give my website a smooth scroll effect when a link is clicked on in the navbar
+// I have a wrote a script to help give my website a smooth scroll effect when a button is clicked
 // I have targeted the anchor tags and gave each section in the html a id 
 
 (function(window, undefined) {

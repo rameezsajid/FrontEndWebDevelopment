@@ -15,158 +15,115 @@
 					<div class="dropdown-menu">
 						<div class="dropdown-button" onclick="myFunction()"></div>
 						<div id="my-navbar" class="dropdown-content">
-							<a href="#home-section">HOME</a>
-							<a href="#section-a">ABOUT</a>
-							<a href="#section-b">COURSES</a>
-							<a href="#section-d">CONTACT</a>
+							<a href="index.html">HOME</a>
+							<a href="about.html">ABOUT</a>
+							<a href="courses.html">COURSES</a>
+							<a href="contact.html">CONTACT</a>
 						</div>
 					</div>
 				</div>
 				<nav class="navbar2">
 					<ul class="navbar2">
 						<li>
-							<a href="#home-section">HOME</a>
+							<a href="index.html">HOME</a>
 						</li>
 						<li>
-							<a href="#section-a">ABOUT</a>
+							<a href="about.html">ABOUT</a>
 						</li>
 						<li>
-							<a href="#section-b">COURSES</a>
+							<a href="courses.html">COURSES</a>
 						</li>
 						<li>
-							<a href="#section-d">CONTACT</a>
+							<a href="contact.html">CONTACT</a>
 						</li>
 					</ul>
 				</nav>
 				<!-- back to top button used to send the user back to the top of the page -->
-				<div class="toTop">
-					<a id="top" href="#showcase">Back To Top</a>
-				</div>
-				<!-- main content starts here -->
+				<div class="to-top">
+					<a id="top" href="#showcase">
+						<img src="img/toTop3.png" alt="">
+						</a>
+					</div>
+					<!-- showcase starts here -->
 					<!-- slideshow content starts here -->
 					<section id ="home-section" class="slideShow">
 						<header id="showcase" class="grid">
 							<div class="content-wrap">
-								<h1>Learning Academy</h1>
+								<h1>Welcome To Learning Academy</h1>
 								<h2>Our last session sold out fast. Reserve your seat TODAY!</h2>
-								<a href="#section-a" class="btn">Read More</a>
+								<a href="#home-section-a" class="btn">Read More</a>
 							</div>
 						</header>
+						<!-- I have used layers to help me with the slideshow -->
 						<div class="layer1"></div>
 						<div class="layer2"></div>
 						<div class="layer3"></div>
 						<div class="layer4"></div>
 						<div class="layer5"></div>
 					</section>
-					<!-- section a starts here -->
+					<!-- home section-a starts here -->
 					<main id="main">
-						<section id="section-a" class="grid">
+						<section id="home-section-a" class="grid">
 							<div class="content-wrap">
-								<h2 class="content-title">What We Do</h2>
+								<h2 class="content-title">Why Train With Us</h2>
 								<div class="content-text">
-									<p>Due to overwhelming demand, we have created course packages for Contractors, Business owners and for people who are looking to up skill and get themselves into Business Analysis or Project Management.</p>
-									<p>We have leading experts on board with over 30 years combined insurance, finance, business analysis and compliance experience.
-									We are now holding seminars across the country to be able to cater for professionals across the UK. We will coach you and mentor you to become a Business Analyst or Project Manager, 
-									we will place you on projects to gain experience and give you one to one support to develop your skill set. We even offer post job support in order to ensure there is a smooth transition from beginner level to advanced.</p>
-									<h3>How the projects work?</h3>
-									<p>We have ongoing projects, where you are guaranteed a placement on the project as an intern in order to be able to apply the theory in practice.</p>
-									<a href="#section-c" class="btn">Why Train With Us?</a>
+									<!-- descriprion -->
+									<p>Learning Academy is a National training provider delivering professional training courses in many locations across the country. 
+									We are driven to coach and mentor candidates, irrespective of their background, to become well respected Business Analysts.</p>
+									<p>We are exceedingly passionate about what we do and continuously strive to provide outstanding quality and value for our clients.
+									We coach you, we place you on projects, we guide you through your job application process and we mentor you on the job.
+									Learning Academy, is run by well respected industry experts with over 30 years of experience combined of 
+									training delivery with FTSE 500 companies.</p>
+									<h2 class="content-title">In-House Training</h2>
+									<p>Our in-house training solutions allow you to choose any classroom course of your choice, delivered at a venue of your choice, and by any 
+									method of your choice - offering you the ultimate convenience and value for money. Our onsite courses save you money by training multiple employees 
+									at once, meaning that you can reduce the travel expenses associated with public courses.</p>
+									<p>Our in-house training can be tailored to your business’s requirements - ensuring premium quality, 
+									applicability, and value for money. Onsite training puts you in control of your employees and allows you to monitor what 
+									they are learning during their training.</p>
+									<p>Business-specific additions can be added to make your organisation more efficient, streamlined, and more profitable. 
+									We design and develop our courses, and can adapt to your needs. We are the market leaders of on-site 
+									and in-house training with over 10 years' market experience of delivering tailored and quality courses to our valued customers.</p>
+								</div>
+								<!-- text to speech section starts here -->
+								<!-- button to open modal -->
+								<button id = "modal-btn" class = "btn">Text To Speech</button>
+								<div id ="my-modal" class="modal">
+									<div class="modal-content">
+										<div class="modal-header">
+											<div class="close">&times;</div>
+											<h2>Text To Speech</h2>
+										</div>
+										<div class="modal-body">
+											<textarea name="text" class="modal-textarea">Learning Academy is a National training provider delivering professional training courses in many locations across the country. 
+											We are driven to coach and mentor candidates, irrespective of their background, to become well respected Business Analysts.
+											We are exceedingly passionate about what we do and continuously strive to provide outstanding quality and value for our clients.
+											We coach you, we place you on projects, we guide you through your job application process and we mentor you on the job.
+											Learning Academy, is run by well respected industry experts with over 30 years of experience combined of 
+											training delivery with FTSE 500 companies.</textarea>
+											<button id="speak" class = "modal-btn">Speak</button>
+											<button id="stop" class = "modal-btn">Stop</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</section>
-						<!-- section b starts here -->
-						<section id="section-b" class="grid">
-							<div class="content-wrap">
-								<h2 class="content-title">Courses</h2>
-								<ul>
-									<li>
-										<div class="card">
-											<img src="img/background5.jpeg" alt="">
-												<div class="card-content">
-													<h3 class="card-title">GDPR Seminar</h3>
-													<p>This 2-Day Fast Track EU General Data Protection Regulation (GDPR) 
-													course has been designed to help you learn all the EU GDPR principles and fundamentals, in order to ensure you are fully compliant.</p>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="card">
-												<img src="img/background4.jpeg" alt="">
-													<div class="card-content">
-														<h3 class="card-title">Financial Crime - AML/KYC</h3>
-														<p>Anti-Money Laundering (AML) and Know Your Customer (KYC) professionals are in demand as organisations increase their focus on risk prevention.</p>
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="card">
-													<img src="img/background7.jpeg" alt="">
-														<div class="card-content">
-															<h3 class="card-title">Business Analysis Training</h3>
-															<p>This BCS Foundation Certificate in Business Analysis course teaches trainees to be able to identify issues in systems, 
-															develop effective business strategies, and manage stakeholders.</p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</section>
-									<!-- section c starts here -->
-									<section id="section-c" class="grid">
-										<div class="content-wrap">
-											<h2 class="content-title">Why Train With Us?</h2>
-											<p>
-											Our in-house training solutions allow you to choose any classroom course of your choice, delivered at a venue of your choice, and by any 
-											method of your choice - offering you the ultimate convenience and value for money. Our onsite courses save you money by training multiple employees 
-											at once, meaning that you can reduce the travel expenses associated with public courses.</p>
-											<p>Our in-house training can be tailored to your business’s requirements - ensuring premium quality, 
-											applicability, and value for money. Onsite training puts you in control of your employees and allows you to monitor what 
-											they are learning during their training.</p>
-											<p>Business-specific additions can be added to make your organisation more efficient, streamlined, and more profitable. 
-											We design and develop our courses, and can adapt to your needs. We are the market leaders of on-site 
-											and in-house training with over 10 years' market experience of delivering tailored and quality courses to our valued customers.</p>
-										</div>
-									</section>
-									<!-- section d ( contact page )starts here -->
-									<section id="section-d" class="grid">
-										<div class="box">
-											<h2 class="content-title">Contact Us</h2>
-											<div id="panel">
-												<div class="con-form">
-													<form action="#" id="form" method="post" name="form">
-														<input name="client" placeholder="Your First Name" type="text" value="" title="Firstname">
-															<input name="client" placeholder="Your Last Name" type="text" value="" title="Lastname">
-																<input name="phone" placeholder="Your Phone Number" type="tel" value="" required>
-																	<input name="email" placeholder="Your Email" type="email" value="" required>
-																		<textarea name="comment" placeholder="Your Message Here..." id="comment"></textarea>
-																		<input class="o-btn" type="Submit" value="Submit">
-																		</form>
-																	</div>
-																</div>
-															</div>
-															<div class="box">
-																<h2 class="content-title">In-House Training</h2>
-																<p>Learning Academy is a National training provider delivering professional training courses in many locations across the country. 
-																We are driven to coach and mentor candidates, irrespective of their background, to become well respected Business Analysts.</p>
-																<p>We are exceedingly passionate about what we do and continuously strive to provide outstanding quality and value for our clients.
-																We coach you, we place you on projects, we guide you through your job application process and we mentor you on the job.
-																Learning Academy, is run by well respected industry experts with over 30 years of experience combined of 
-																training delivery with FTSE 500 companies.</p>
-															</div>
-														</section>
-													</main>
-													<!-- footer of the page is here -->
-													<footer id="main-footer" class="grid">
-														<div>Copyright &copy; 2017 Learning Academy</div>
-														<div>Powered By 
-															<a href="https://github.com/rameezsajid/CTEC3905_P15224656" target="_blank">Rameez Sajid</a>
-														</div>
-													</footer>
-				<!-- two scripts used, one is used for giving a scrolling effect when clicking on a link in the navbar -->
-				<!-- and the other is used for showing and hidding navbar1 -->
-				<script src="js/script.js"></script>
-				<script src="js/scroll.js"></script>
-			</body>
-
-
-</html>
+					</main>
+					<!-- footer of the page is here -->
+					<footer id="main-footer" class="grid">
+						<div>Copyright &copy; 2017 Learning Academy</div>
+						<div>Sitemap Created 								
+							
+							<a href="https://rssajid.github.io/sitemap.xml" target="_blank">Click For Sitemap</a>
+						</div>
+					</footer>
+					<!-- four scripts used, one is used for giving a scrolling effect when clicking on a link in the buttons -->
+					<!-- the second is used for showing and hiding content in navbar1 -->
+					<!-- the third is used for opening and closing the modal -->
+					<!-- the fourth is used for the text to speech function -->
+					<script src="js/script.js"></script>
+					<script src="js/scroll.js"></script>
+					<script src="js/modal.js"></script>
+					<script src="js/textspeech.js"></script>
+				</body>
+			</html>

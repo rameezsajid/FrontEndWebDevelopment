@@ -19,6 +19,8 @@ html, body {
   height: 100%;
 }
 
+/* no decoration for links */
+
 a {
   text-decoration: none;
 }
@@ -88,43 +90,32 @@ nav li:last-child a {
   border-right: 0;
 }
 
-nav a:hover, nav a:active {
+nav a:hover, .navbar2 a:active {
   background-color: #D4D0D0;
   color: black;
 }
 
 /* this the styling of the back to top button which will be placed bottom right corner of the page */
 
-.toTop {
+.to-top {
   bottom: 0;
   right: 0;
-  background-color: rgba(0,0,0,.5);
-  height: 40px;
-  font-size: 11pt;
-  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
-  font-weight: bold;
+  background-color: white;
   position: fixed;
   border-radius: 5px;
-  z-index: 10;
-  text-align: center;
-  color: white;
+  z-index: 999;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
-.toTop a {
-  display: inline-block;
-  width: 120px;
-  text-decoration: none;
-  color: #fff;
-  line-height: 40px;
-  box-sizing: border-box;
+.to-top img:hover, .toTop img:active {
+  background-color: #E8E9EA;
 }
 
-.toTop a:hover, .toTop a:active {
-  background-color: #D4D0D0;
-  color: black;
+.to-top img {
+  max-height: 32px;
+  max-width: 32px;
 }
-
-
 
 /* styling for navbar1 */
 
@@ -151,6 +142,7 @@ nav a:hover, nav a:active {
 }
 
 /* This is the dropdown content styles it is hidden by default */
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -161,6 +153,7 @@ nav a:hover, nav a:active {
 }
 
 /* this is the content inside the dropdown menu */
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -169,11 +162,13 @@ nav a:hover, nav a:active {
 }
 
 /* this changes the color of links in the menu when hovered */
+
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
 /* this shows the dropdown menu */
+
 .show {
   display: block;
 }
@@ -433,6 +428,9 @@ nav a:hover, nav a:active {
   padding-bottom: 0;
 }
 
+/* styles for the buttons */
+/* i've added a transition effect to the buttons */
+
 .btn {
   display: inline-block;
   background: #333;
@@ -443,6 +441,8 @@ nav a:hover, nav a:active {
   margin: .5em 0;
   margin-top: 50px;
   font-weight: 600;
+  transition: background 0.3s linear 0s, color 0.3s linear 0s;
+  max-width: 400px;
 }
 
 .btn:hover {
@@ -454,46 +454,139 @@ nav a:hover, nav a:active {
 
 .content-wrap {
   padding: 0 1.5em;
-  padding-top: 2em;
 }
 
 #main {
-  min-height: 75%;
   color: #fff;
   text-align: center;
 }
 
-#section-a {
+/* home page styles */
+
+#home-section-a {
   background: #eaeaea;
   color: #333;
   padding-bottom: 2em;
+  padding-top: 40px;
 }
 
-#section-b {
-  padding: 0 1em 1em;
+/* styles for about page */
+/* padding, text alignment and backgound color etc. */
+
+#about-section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+  padding-top: 40px;
+}
+
+#about-section-b {
+  padding: 1em 1em 1em;
   text-align: center;
+  padding-top: 40px;
 }
 
-#section-b ul {
+#about-section-b ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#section-b li {
+#about-section-b li {
   margin-bottom: 1em;
   background: #fff;
   color: #333;
 }
 
-.card-content {
-  padding: 1.5em;
-}
+/* style for button in about section */
+/* I gave this button seperate styles as I wanted the style for this button to be a bit different to the other buttons */
 
-#section-c {
+#about-section-b .btn {
+  display: inline-block;
   background: #eaeaea;
   color: #333;
-  padding: 2em;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: .5em 0;
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+#about-section-b .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* courses section given styles */
+/* given color, padding and text alignment to make text center of page */
+
+#courses-section-a {
+  padding: 1em 1em 1em;
+  text-align: center;
+  color: black;
+  padding-top: 40px;
+}
+
+/* courses section does not need padding when being accessed from mobile phone */
+/* but will need padding when screen is larger */
+
+#courses-section-a .content-wrap {
+  padding: 0 0;
+}
+
+/* flexbox is used in the course page */
+
+.courses {
+	margin: 10px;
+	font-size: 1em;
+	display: -ms-flexbox;
+	flex-flow: row wrap;
+	display: -webkit-box;
+	display: flex;
+}
+
+/* giving the divs in the courses class a width and margin */
+
+.courses div {
+	-webkit-box-flex: auto;
+	flex: auto;
+	width: 400px;
+	margin: 5px;
+}
+
+.courses div p {
+	width: 100%;
+	height: auto;
+}
+
+.courses div img {
+	width: 100%;
+	height: auto;
+}
+
+.courses-text {
+	background-color: #eaeaea;
+	padding: 20px;
+	padding-top: 50px;
+}
+
+.container {
+	padding: 10px;
+	background-color: #eaeaea;
+}
+
+/* giving contact section background and color styles */
+
+#contact-section-a .box:first-child {
+  background: #eaeaea;
+  color: black;
+}
+
+/* card content and box classes given styles */
+
+.card-content {
+  padding: 1.5em;
 }
 
 .box {
@@ -501,9 +594,6 @@ nav a:hover, nav a:active {
   color: #fff;
 }
 
-#section-d .box:first-child {
-  background: #2690d4;
-}
 
 /* styling for footer */
 
@@ -520,6 +610,7 @@ nav a:hover, nav a:active {
 }
 
 /* submit button styling in the contact form */
+
 .button,
 button,
 input[type="submit"],
@@ -532,7 +623,7 @@ input[type="button"] {
   position: relative;
   margin: 0 0 0 0;
   margin-top: 15px;
-  color: #fff;
+  color: black;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -543,7 +634,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 6px solid white;
+  border: 6px solid #333;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -558,9 +649,10 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #2B3A42;
-  background: white;
+  color: white;
+  background: #333;
   outline: 0;
+  border: 6px solid #eaeaea;
 }
 
 /* input field styling in the contact form */
@@ -597,7 +689,131 @@ textarea {
   text-align: center;
 }
 
+/* giving google maps a height and width */
+
+#my-map {
+  height: 300px;
+  width: 100%;
+}
+
+/* modal styling starts here */
+/* I have given it a display of none so it is hidden until the button is clicked */
+/* I have used some javascript to help me achieve this */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* animation is used for when the button is clicked and modal is displayed */
+
+.modal-content {
+  background-color: #eaeaea;
+  margin: 10% auto;
+  width: 90%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 5px 7px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 2s;
+}
+
+/* keyframes for the modal animation */
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* styles for the modal header */
+
+.modal-header {
+  background: #333;
+  color: white;
+  padding: 15px;
+}
+
+/* styles for the close button */
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+
+.close:hover,.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* hide textarea in modal */
+.modal-textarea {
+  display: none;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+/* styles for the buttons in modal */
+.modal-btn {
+  display: block;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #666;
+  margin: auto;
+  font-weight: 600;
+  transition: background 0.3s linear 0s, color 0.3s linear 0s;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.modal-btn:hover {
+  background-color: #eaeaea;
+  color: #333;
+}
+
+#contact-section-b {
+  color: black;
+  padding-top: 40px;
+  background-color: #eaeaea;
+  padding: 1em 1em 1em;
+}
+
+.countdown {
+  text-align: center;
+  background: #ddd;
+  border: 1px solid #999;
+  padding: 10px;
+  box-shadow: 0 0 5px 3px #ccc;
+}
+
+.info {
+  font-size: 20px;
+}
+
+table {
+  margin: auto;
+}
+
+#contact-section-b .content-wrap {
+  padding: 0 0;
+}
+
 /* media query to not display navbar2 when mobile screen */
+
 @media only screen and (max-width : 749px) {
 
   .navbar2 {
@@ -614,8 +830,7 @@ textarea {
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
   }
 
-  .content-wrap, 
-	#section-b ul {
+  .content-wrap {
     grid-column: 1/5;
   }
 
@@ -623,12 +838,21 @@ textarea {
     grid-column: span 2;
   }
 
-  #section-b ul {
+  #about-section-b ul {
     display: flex;
     justify-content: space-around;
   }
 
-  #section-b li {
+  #about-section-b li {
+    width: 31%;
+  }
+  
+  #courses-section-a ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #courses-section-a li {
     width: 31%;
   }
 
@@ -640,9 +864,30 @@ textarea {
   .navbar1 {
     display: none;
   }
+  
+  /* giving padding to the left and right when screen size is increased to atleast 750px */
+  
+  #home-section-a {
+	padding-left: 2em;
+	padding-right: 2em;
+  }
+  
+  #courses-section-a .content-wrap {
+  padding: 5em;
+  }
+  
+  .info {
+    font-size: 50px;
+  }
+  
+  /* change width of modal content when screensize increases */
+  .modal-content {
+    width: 50%;
+  }
 }
 
 /* media query to change content wrap and adjust padding to the left and right when device screen size is between 749 and 1299 px */
+
 @media screen and (max-width: 1299px) and (min-width: 749px) {
 
   .content-wrap {

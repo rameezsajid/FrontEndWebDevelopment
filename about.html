@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meta tags for responsivness and browser compatiblity -->
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, intial-scale=1.0" />
+			<title>Learning Academy</title>
+			<!-- main css file for the styling -->
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			</head>
+			<body>
+				<!-- I have created two navbars, one for mobile which is the default and one for larger screen sizes -->
+				<div class="navbar1">
+					<div class="dropdown-menu">
+						<div class="dropdown-button" onclick="myFunction()"></div>
+						<div id="my-navbar" class="dropdown-content">
+							<a href="index.html">HOME</a>
+							<a href="about.html">ABOUT</a>
+							<a href="courses.html">COURSES</a>
+							<a href="contact.html">CONTACT</a>
+						</div>
+					</div>
+				</div>
+				<nav class="navbar2">
+					<ul class="navbar2">
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="courses.html">COURSES</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- back to top button used to send the user back to the top of the page -->
+				<div class="to-top">
+					<a id="top" href="#showcase">
+						<img src="img/toTop3.png" alt="">
+						</a>
+					</div>
+					<!-- showcase starts here -->
+					<!-- slideshow content starts here -->
+					<section id ="home-section" class="slideShow">
+						<header id="showcase" class="grid">
+							<div class="content-wrap">
+								<h1>About Us</h1>
+								<h2>Our last session sold out fast. Reserve your seat TODAY!</h2>
+								<a href="#about-section-a" class="btn">What We Do</a>
+							</div>
+						</header>
+						<!-- I have used layers to help me with the slideshow -->
+						<div class="layer1"></div>
+						<div class="layer2"></div>
+						<div class="layer3"></div>
+						<div class="layer4"></div>
+						<div class="layer5"></div>
+					</section>
+					<!-- about section-a starts here -->
+					<main id="main">
+						<section id="about-section-a" class="grid">
+							<div class="content-wrap">
+								<h2 class="content-title">What We Do</h2>
+								<div class="content-text">
+									<!-- description -->
+									<p>Due to overwhelming demand, we have created course packages for Contractors, Business owners and for people who are looking to up skill and get themselves into Business Analysis or Project Management.</p>
+									<p>We have leading experts on board with over 30 years combined insurance, finance, business analysis and compliance experience.
+									We are now holding seminars across the country to be able to cater for professionals across the UK. We will coach you and mentor you to become a Business Analyst or Project Manager, 
+									we will place you on projects to gain experience and give you one to one support to develop your skill set. We even offer post job support in order to ensure there is a smooth transition from beginner level to advanced.</p>
+									<h3>How the projects work?</h3>
+									<p>We have ongoing projects, where you are guaranteed a placement on the project as an intern in order to be able to apply the theory in practice.</p>
+								</div>
+								<!-- text to speech starts here -->
+								<!-- button to open modal -->
+								<button id = "modal-btn" class = "btn">Text To Speech</button>
+								<!-- modal -->
+								<div id ="my-modal" class="modal">
+									<div class="modal-content">
+										<div class="modal-header">
+											<div class="close">&times;</div>
+											<h2>Text To Speech</h2>
+										</div>
+										<div class="modal-body">
+											<textarea name="text" class="modal-textarea">Due to overwhelming demand, we have created course packages for Contractors, 
+											Business owners and for people who are looking to up skill and get themselves into Business Analysis or Project Management.
+											We have leading experts on board with over 30 years combined insurance, finance, business analysis and compliance experience.
+											We are now holding seminars across the country to be able to cater for professionals across the UK. We will coach you and 
+											mentor you to become a Business Analyst or Project Manager, 
+											we will place you on projects to gain experience and give you one to one support to develop your skill set. 
+											We even offer post job support in order to ensure there is a smooth transition from beginner level to advanced.</textarea>
+											<button id="speak" class = "modal-btn">Speak</button>
+											<button id="stop" class = "modal-btn">Stop</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- section b starts here -->
+						<section id="about-section-b" class="grid">
+							<div class="content-wrap">
+								<ul>
+									<li>
+										<div class="card">
+											<img src="img/background5.jpeg" alt="">
+												<div class="card-content">
+													<h3 class="card-title">GDPR Seminar</h3>
+													<p>This 2-Day Fast Track EU General Data Protection Regulation (GDPR) 
+													course has been designed to help you learn all the EU GDPR principles and fundamentals, in order to ensure you are fully compliant.</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="card">
+												<img src="img/background4.jpeg" alt="">
+													<div class="card-content">
+														<h3 class="card-title">Financial Crime - AML/KYC</h3>
+														<p>Anti-Money Laundering (AML) and Know Your Customer (KYC) professionals are in demand as organisations increase their focus on risk prevention.</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="card">
+													<img src="img/background7.jpeg" alt="">
+														<div class="card-content">
+															<h3 class="card-title">Business Analysis Training</h3>
+															<p>This BCS Foundation Certificate in Business Analysis course teaches trainees to be able to identify issues in systems, 
+															develop effective business strategies, and manage stakeholders.</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<a href="courses.html" class="btn">Learn More About The Courses We Provide</a>
+										</div>
+									</section>
+								</main>
+								<!-- footer of the page is here -->
+								<footer id="main-footer" class="grid">
+									<div>Copyright &copy; 2017 Learning Academy</div>
+									<div>Sitemap Created 
+															
+										
+										<a href="https://rssajid.github.io/sitemap.xml" target="_blank">Click For Sitemap</a>
+									</div>
+								</footer>
+								<!-- four scripts used, one is used for giving a scrolling effect when clicking on a link in the buttons -->
+								<!-- the second is used for showing and hiding content in navbar1 -->
+								<!-- the third is used for opening and closing the modal -->
+								<!-- the fourth is used for the text to speech function -->
+								<script src="js/script.js"></script>
+								<script src="js/scroll.js"></script>
+								<script src="js/modal.js"></script>
+								<script src="js/textspeech.js"></script>
+							</body>
+						</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meta tags for responsivness and browser compatiblity -->
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, intial-scale=1.0" />
+			<title>Contact Us</title>
+			<!-- main css file for the styling -->
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			</head>
+			<body>
+				<!-- I have created two navbars, one for mobile which is the default and one for larger screen sizes -->
+				<div class="navbar1">
+					<div class="dropdown-menu">
+						<div class="dropdown-button" onclick="myFunction()"></div>
+						<div id="my-navbar" class="dropdown-content">
+							<a href="index.html">HOME</a>
+							<a href="about.html">ABOUT</a>
+							<a href="courses.html">COURSES</a>
+							<a href="contact.html">CONTACT</a>
+						</div>
+					</div>
+				</div>
+				<nav class="navbar2">
+					<ul class="navbar2">
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="courses.html">COURSES</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- back to top button used to send the user back to the top of the page -->
+				<div class="to-top">
+					<a id="top" href="#showcase">
+						<img src="img/toTop3.png" alt="">
+						</a>
+					</div>
+					<!-- showcase starts here -->
+					<!-- slideshow content starts here -->
+					<section id ="home-section" class="slideShow">
+						<header id="showcase" class="grid">
+							<div class="content-wrap">
+								<h1>Contact Us</h1>
+								<h2>Our last session sold out fast. Reserve your seat TODAY!</h2>
+								<a href="#contact-section-a" class="btn">Book Now</a>
+							</div>
+						</header>
+						<!-- I have used layers to help me with the slideshow -->
+						<div class="layer1"></div>
+						<div class="layer2"></div>
+						<div class="layer3"></div>
+						<div class="layer4"></div>
+						<div class="layer5"></div>
+					</section>
+					<!-- section a starts here -->
+					<main id="main">
+						<!-- contact form -->
+						<section id="contact-section-a" class="grid">
+							<div class="box">
+								<h2 class="content-title">Contact Us</h2>
+								<div id="panel">
+									<div class="con-form">
+										<form action="#" id="form" method="post" name="form">
+											<input name="client" placeholder="Your First Name" type="text" value="" title="Firstname">
+												<input name="client" placeholder="Your Last Name" type="text" value="" title="Lastname">
+													<input name="phone" placeholder="Your Phone Number" type="tel" value="" required>
+														<input name="email" placeholder="Your Email" type="email" value="" required>
+															<textarea name="comment" placeholder="Your Message Here..." id="comment"></textarea>
+															<input class="o-btn" type="Submit" value="Submit">
+															</form>
+														</div>
+													</div>
+												</div>
+												<div class="box">
+													<!-- google map -->
+													<h3>Find Us Here</h3>
+													<div id="my-map"></div>
+													<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_U4i0Gp0pOh4Xn9-1nuz9WLRzz5TqAaU&callback=initMap"></script>
+												</div>
+											</section>
+											<section id="contact-section-b" class="grid">
+												<div class="content-wrap">
+													<h2 class="content-title">Hurry, Book Now!</h2>
+														<table class="countdown">
+															<tr class="info">
+																<td colspan="4">Our Next Seminar</td>
+															</tr>
+															<tr class="info">
+																<td id="days"></td>
+																<td id="hours"></td>
+																<td id="minutes"></td>
+																<td id="seconds"></td>
+															</tr>
+															<tr>
+																<td>Days</td>
+																<td>Hours</td>
+																<td>Minutes</td>
+																<td>Seconds</td>
+															</tr>
+														</table>							
+												</div>
+											</section>
+										</main>
+										<!-- footer of the page is here -->
+										<footer id="main-footer" class="grid">
+											<div>Copyright &copy; 2017 Learning Academy</div>
+											<div>Sitemap Create: 
+															
+												<a href="https://rssajid.github.io/sitemap.xml" target="_blank">Click For Sitemap</a>
+											</div>
+										</footer>
+										<!-- four scripts used, one is used for giving a scrolling effect when clicking on a link in a button -->
+										<!-- the second is used for showing and hiding the content in navbar1 -->
+										<!-- the third is used for google maps -->
+										<!-- fourth script is used for the countdown clock -->
+										<script src="js/script.js"></script>
+										<script src="js/scroll.js"></script>
+										<script src="js/googlemaps.js"></script>
+										<script src="js/countdown.js"></script>
+									</body>
+								</html>
