@@ -95,6 +95,12 @@ nav a:hover, .navbar2 a:active {
   color: black;
 }
 
+/* navbar2 is not displayed as the layout is mobile first */
+
+.navbar2 {
+  display: none;
+}
+
 /* this the styling of the back to top button which will be placed bottom right corner of the page */
 
 .to-top {
@@ -551,7 +557,7 @@ nav a:hover, .navbar2 a:active {
 .courses div {
 	-webkit-box-flex: auto;
 	flex: auto;
-	width: 400px;
+	width: 100%;
 	margin: 5px;
 }
 
@@ -865,6 +871,10 @@ table {
     display: none;
   }
   
+  .navbar2{
+	  display: block;
+  }
+  
   /* giving padding to the left and right when screen size is increased to atleast 750px */
   
   #home-section-a {
@@ -884,6 +894,12 @@ table {
   .modal-content {
     width: 50%;
   }
+}
+
+@media(min-width: 950px) {
+.courses div {
+	width: 40%;
+ }
 }
 
 /* media query to change content wrap and adjust padding to the left and right when device screen size is between 749 and 1299 px */
