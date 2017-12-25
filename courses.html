@@ -40,7 +40,7 @@
 				</nav>
 				<!-- back to top button used to send the user back to the top of the page -->
 				<div class="to-top">
-					<a id="top" href="#showcase">
+					<a href="#" onclick="return false;" onmousedown="resetScroller('showcase');">
 						<img src="img/toTop3.png" alt="">
 						</a>
 					</div>
@@ -51,7 +51,7 @@
 							<div class="content-wrap">
 								<h1>Courses</h1>
 								<h2>Our last session sold out fast. Reserve your seat TODAY!</h2>
-								<a href="#courses-section-a" class="btn">Learn More</a>
+								<a onclick="initScroll('courses-section-a'); return false;" href="#" class="btn">Learn More</a>
 							</div>
 						</header>
 						<!-- I have used layers to help me with the slideshow -->
