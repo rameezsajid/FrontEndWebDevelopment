@@ -97,7 +97,7 @@ nav a:hover, .navbar2 a:active {
 
 /* navbar2 is not displayed as the layout is mobile first */
 
-.navbar2 {
+.nav-bar2 {
   display: none;
 }
 
@@ -125,7 +125,7 @@ nav a:hover, .navbar2 a:active {
 
 /* styling for navbar1 */
 
-.navbar1 {
+.nav-bar1 {
   font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
   position: fixed;
   width: 100%;
@@ -134,7 +134,7 @@ nav a:hover, .navbar2 a:active {
   z-index: 10;
 }
 
-.dropdown-button {
+.nav-bar1-button {
   padding: 12px;
   cursor: pointer;
   background: url('../img/nav-icon.png') no-repeat;
@@ -142,14 +142,14 @@ nav a:hover, .navbar2 a:active {
   margin-top: 10px;
 }
 
-.dropdown-menu {
+.nav-bar1-menu {
   position: absolute;
   display: inline-block;
 }
 
 /* This is the dropdown content styles it is hidden by default */
 
-.dropdown-content {
+.nav-bar1-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -160,7 +160,7 @@ nav a:hover, .navbar2 a:active {
 
 /* this is the content inside the dropdown menu */
 
-.dropdown-content a {
+.nav-bar1-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -169,7 +169,7 @@ nav a:hover, .navbar2 a:active {
 
 /* this changes the color of links in the menu when hovered */
 
-.dropdown-content a:hover {
+.nav-bar1-content a:hover {
   background-color: #f1f1f1;
 }
 
@@ -818,15 +818,6 @@ table {
   padding: 0 0;
 }
 
-/* media query to not display navbar2 when mobile screen */
-
-@media only screen and (max-width : 749px) {
-
-  .navbar2 {
-    display: none;
-  }
-}
-
 /* media query to change layout of webpage when accessed from a device which has a screen size with a width of at least 750px*/
 /* this layout is for devices such as ipads, tablets, laptops, and computers */
 
@@ -867,11 +858,11 @@ table {
     padding-right: 5em;
   }
 
-  .navbar1 {
+  .nav-bar1 {
     display: none;
   }
   
-  .navbar2{
+  .nav-bar2{
 	  display: block;
   }
   
