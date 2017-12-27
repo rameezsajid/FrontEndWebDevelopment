@@ -3,8 +3,8 @@
 function initMap() {
  // get location
  var point = {
-  lat: 52.62978,
-  lng: -1.1415587
+  lat: 52.4512502,
+  lng: -2.0061653
  };
  // get element my-map from contact page
  var map = new google.maps.Map(document.getElementById('my-map'), {
