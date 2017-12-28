@@ -5,11 +5,10 @@
 - **CSS** has been used to style the pages.
 - Some **JAVASCRIPT** has been used to help my website have a smooth scroll when a button is clicked, and to display the content in the first navigation bar when icon is clicked.
 - **JAVASCRIPT** has also been used for the speech synthesis, and the use of google maps, additionally, some **JAVASCRIPT** has been used for helping to display and close the modal.
-- My website has a countdown clock which is displayed in the contact page, I used some **JAVASCRIPT** to help me achieve this.
-- My website has multiple pages and a sitemap is included - a link to the sitemap is included in the footer of the web pages
+- My website has a timer counting down, which is displayed in the contact page, I used some **JAVASCRIPT** to help me achieve this.
+- My website has multiple pages and a sitemap is included - a link to the **sitemap** is included in the footer of the web pages
 - The pages are responsive and the layout is mobile first and will change when screen size is increased, I used breakpoints to help me achieve this.
 - I have added descriptive comments throughout the code.
-- In the footer there is a link that sends the user to the **sitemap**.
 - There are some **wireframes** in the [wireframe folder](wireframes) that shows how the layout will be in different screen sizes.
 - I have also added a **test log** document and images of the **test log** in the [test-log folder](test-log).
 - The HTML and CSS is fully validated and there are no errors.
