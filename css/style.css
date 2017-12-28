@@ -47,24 +47,23 @@ img {
 /* styles for navbar2 starts here */
 
 nav {
-  height: 40px;
+  height: 35px;
   width: 100%;
-  font-size: 11pt;
+  font-size: 15px;
   font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
   font-weight: bold;
   position: fixed;
   border-radius: 5px;
-  z-index: 1;
+  z-index: 50;
   background-color: black;
-  z-index: 99;
   text-align: center;
 }
 
 nav ul {
   padding: 0;
   margin: 0 auto;
-  width: 600px;
-  height: 40px;
+  width: 680px;
+  height: 35px;
 }
 
 nav li {
@@ -74,15 +73,15 @@ nav li {
 
 nav a {
   display: inline-block;
-  width: 150px;
+  width: 170px;
+  color: #fff;
   text-align: center;
   text-decoration: none;
-  color: #fff;
-  line-height: 40px;
+  line-height: 35px;
 }
 
 nav li a {
-  border-right: 1px solid #576979;
+  border-right: 2px solid #eaeaea;
   box-sizing: border-box;
 }
 
@@ -128,10 +127,10 @@ nav a:hover, .navbar2 a:active {
 .nav-bar1 {
   font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
   position: fixed;
+  height: 35px;
   width: 100%;
   background-color: black;
-  height: 40px;
-  z-index: 10;
+  z-index: 50;
 }
 
 .nav-bar1-button {
@@ -139,7 +138,7 @@ nav a:hover, .navbar2 a:active {
   cursor: pointer;
   background: url('../img/nav-icon.png') no-repeat;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .nav-bar1-menu {
@@ -152,25 +151,27 @@ nav a:hover, .navbar2 a:active {
 .nav-bar1-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #eaeaea;
+  min-width: 140px;
   margin-left: 10px;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+  border-radius: 10px;
 }
 
 /* this is the content inside the dropdown menu */
 
 .nav-bar1-content a {
-  color: black;
-  padding: 12px 16px;
+  color: #333;
   text-decoration: none;
   display: block;
+  padding: 12px 16px;
 }
 
 /* this changes the color of links in the menu when hovered */
 
 .nav-bar1-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #333;
+  color: #fff;
 }
 
 /* this shows the dropdown menu */
@@ -589,6 +590,17 @@ nav a:hover, .navbar2 a:active {
   color: black;
 }
 
+#contact-section-b {
+  color: black;
+  padding-top: 40px;
+  background-color: #eaeaea;
+  padding: 1em 1em 1em;
+}
+
+#contact-section-b .content-wrap {
+  padding: 0 0;
+}
+
 /* card content and box classes given styles */
 
 .card-content {
@@ -599,7 +611,6 @@ nav a:hover, .navbar2 a:active {
   padding: 2em;
   color: #fff;
 }
-
 
 /* styling for footer */
 
@@ -791,13 +802,6 @@ textarea {
   color: #333;
 }
 
-#contact-section-b {
-  color: black;
-  padding-top: 40px;
-  background-color: #eaeaea;
-  padding: 1em 1em 1em;
-}
-
 .countdown {
   text-align: center;
   background: #ddd;
@@ -812,10 +816,6 @@ textarea {
 
 table {
   margin: auto;
-}
-
-#contact-section-b .content-wrap {
-  padding: 0 0;
 }
 
 /* media query to change layout of webpage when accessed from a device which has a screen size with a width of at least 750px*/
