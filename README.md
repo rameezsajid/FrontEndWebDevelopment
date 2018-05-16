@@ -1,4 +1,3 @@
-# CTEC3905_P15224656
 ### My Project
 
 - I have used **HTML** to structure the web pages.
