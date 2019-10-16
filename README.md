@@ -1,4 +1,4 @@
-### Front End Development
+### Front End Web Development
 - Built Using HTML, CSS and JavaScript
 - One Click Scrollable Feature Implemented using JavaScript
-- Responsive
+- Mobile Responsive
