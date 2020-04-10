@@ -6,7 +6,7 @@ function countdown() {
  var now = new Date();
 
  // gives the clock a date to countdown for
- var eventDate = new Date(2018, 2, 16);
+ var eventDate = new Date(2020, 9, 20);
 
  // gets current time 
  var currentTime = now.getTime();
